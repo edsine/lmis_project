@@ -58,7 +58,7 @@ function App() {
           <Route exact path="/summary" component={Summary} />
           <Route exact path="/viewdetails" component={Viewdetails} />
           <Route exact path="/Employment-Stats" component={EmpStats} />
-          {/* <Route exact path="/SkillBank" component={SkillBank} /> */}
+          <Route exact path="/SkillBank" component={SkillBank} />
 
           <Route exact path="/trends" component={Trends} />
         </Switch>
