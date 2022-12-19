@@ -87,7 +87,7 @@ import "../../styles/bootstrap-icons/bootstrap-icons.css";
         <li><a href="#services">Sectors</a></li>
         <li><a href="#portfolio">Occupation</a></li>
         <li><a href="#team">States</a></li>
-        <li><a href="blog.html">Data Insights</a></li>
+        <li><Link  to="/Data">Data Insights</Link></li>
         <li className="dropdown"><a href="#"><span>More Tools</span> <i className="bi bi-chevron-down dropdown-indicator" /></a>
           <ul>
             <li><a href="#">Find Jobs</a></li>
@@ -118,7 +118,8 @@ import "../../styles/bootstrap-icons/bootstrap-icons.css";
 
 
 
-
+  <br />
+        <p style={{marginLeft: '20px', }}>Home || <b  style={{color: 'green'}}>Occupation</b></p>
 
         <div class="card card-margin">
            

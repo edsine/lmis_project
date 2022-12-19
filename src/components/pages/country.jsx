@@ -8,8 +8,6 @@ import { HorizontalBar } from 'react-chartjs-2';
 import Common from '../inc/Common';
 
 
-import Footer from '../inc/Footer';
-
  function Country() {
 
 
@@ -38,13 +36,13 @@ import Footer from '../inc/Footer';
         <div className=''>
         <div class="card card-margin">
            
-           <div class="card-body" style={{backgroundColor: '#0A6921'}}>
+           <div class="card-body" style={{backgroundColor: 'white'}}>
             <div className='container'>
                 <div className='row'>
                     <div className='col-12'>
-                        <h1 style={{color: 'white', fontStyle: 'bold'}}> <BiBuoy size={58} color="white" className='pb-2'/> Browse by States</h1>
+                        <h1 style={{color: 'black', fontStyle: 'bold'}}> <BiBuoy size={58} color="green" className='pb-2'/> Browse by States</h1>
 
-                    <p style={{color: 'white'}}> Accommodation & food
+                    <p style={{color: 'black'}}> Accommodation & food
         provision of short-stay accommodation for visitors and other travellers and of longer-term accommodation for students, workers and similar individuals, either including or excluding the provision of meals or recreational facilities. Excluded is the provision of long-term primary residences, typically leased on a monthly or annual basis, as these are classified under real estate.</p>
                     </div>
              
