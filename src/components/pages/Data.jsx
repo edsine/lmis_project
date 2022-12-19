@@ -95,6 +95,48 @@ export function DataPage() {
 <Script  url="http://localhost:3000/main.js" />
 
        
+
+<header id="header" className="header d-flex align-items-center" >
+  <div className="container-fluid container-xl d-flex align-items-center justify-content-between" >
+    <a href="index.html" className="logo d-flex align-items-center">
+      {/* Uncomment the line below if you also wish to use an image logo */}
+      {/* <img src="assets/img/logo.png" alt=""> */}
+      <h1>LMIS<span>.</span></h1>
+    </a>
+    <nav id="navbar" className="navbar">
+      <ul>
+        <li><Link  to="/">Home</Link></li>
+        <li> <Link  to="/Indicators">Indicators</Link></li>
+        <li><a href="#services">Sectors</a></li>
+        <li><Link  to="/Occupation">Occupation</Link></li>
+        <li><a href="#team">States</a></li>
+        <li><Link  to="/Data">Data Insights</Link></li>
+        <li className="dropdown"><a href="#"><span>More Tools</span> <i className="bi bi-chevron-down dropdown-indicator" /></a>
+          <ul>
+            <li><a href="#">Find Jobs</a></li>
+            <li className="dropdown"><a href="#"><span>Online Tools</span> <i className="bi bi-chevron-down dropdown-indicator" /></a>
+              <ul>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">National Plan</a></li>
+                <li><a href="#">Budget</a></li>
+                <li><a href="#">Summary</a></li>
+             
+              </ul>
+            </li>
+            <li><a href="#">Jobs Statistics</a></li>
+            <li><a href="#">Infographs</a></li>
+            <li><a href="#">Contact NLMIS</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">About LMIS</a></li>
+      </ul>
+    </nav>{/* .navbar */}
+    <i className="mobile-nav-toggle mobile-nav-show bi bi-list" />
+    <i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" />
+  </div>
+</header>{/* End Header */}
+{/* End Header */}
+{/* ======= Hero Section ======= */}
      
         
            
@@ -110,10 +152,10 @@ export function DataPage() {
           <div className="col-sm-4" >
             <div className="card"  style={{height: '300px', marginBottom: '45px',  marginTop: '15px'}}>
               <div className="card-block" >
-              <img style={{height: '300px', width:'420px'}} type="button" onClick={showModal}  data-toggle="modal" data-target="#USG" src={Ndd} alt="" />
+              <img style={{height: '300px', width:'420px', objectFit: 'cover'}} type="button" onClick={showModal}  data-toggle="modal" data-target="#USG" src={Ndd} alt="" />
                
               </div>
-              <div className="" style={{backgroundColor: '#0A6921', opacity: 1.0,  marginBottom: '105px', width:'420px'}}>
+              <div className="" style={{backgroundColor: 'rgba(72, 129, 52, 1)', opacity: 1.0,  marginBottom: '105px', width:'420px'}}>
               <center>  <p style={{color: 'white',  paddingTop: '5px', fontSize: '14px'}}>UNEMPLOYMENT STATISTICS BY GENDER</p><center>
                 </center></center>
                 
@@ -131,10 +173,10 @@ export function DataPage() {
           <div className="col-sm-4">
           <div className="card"  style={{height: '300px', marginBottom: '45px',  marginTop: '15px'}}>
               <div className="card-block">
-              <img style={{height: '300px', width:'420px'}} type="button" onClick={showModalx}  src={Vasa} alt="" />
+              <img style={{height: '300px', width:'420px', objectFit: 'cover'}} type="button" onClick={showModalx}  src={Vasa} alt="" />
                 
               </div>
-              <div className="" style={{backgroundColor: '#0A6921', opacity: 1.0,  marginBottom: '105px', width:'420px'}}>
+              <div className="" style={{backgroundColor: 'rgba(72, 129, 52, 1)', opacity: 1.0,  marginBottom: '105px', width:'420px'}}>
               <center>  <p style={{color: 'white',  paddingTop: '5px', fontSize: '14px'}}>UNEMPLOYMENT BY DWELLING (Urban and Rural)</p><center>
                 </center></center></div>
 
@@ -144,11 +186,11 @@ export function DataPage() {
           <div className="col-sm-4" >
           <div className="card"  style={{height: '300px', marginBottom: '45px',  marginTop: '15px'}}>
               <div className="card-block">
-              <img style={{height: '300px', width:'420px'}} type="button" onClick={showModal}  src={Neds} alt="" />
+              <img style={{height: '300px', width:'420px', objectFit: 'cover'}} type="button" onClick={showModal}  src={Neds} alt="" />
              
               </div>
              
-              <div className="" style={{backgroundColor: '#0A6921', opacity: 1.0,  marginBottom: '105px', width:'420px'}}>
+              <div className="" style={{backgroundColor: 'rgba(72, 129, 52, 1)', opacity: 1.0,  marginBottom: '105px', width:'420px'}}>
               <center>  <p style={{color: 'white',  paddingTop: '5px', fontSize: '14px'}}>UNEMPLOYMENT STATISTICS BY AGE GROUP</p><center>
                 </center></center></div>
 
@@ -160,12 +202,12 @@ export function DataPage() {
           <div className="col-sm-4" >
           <div className="card"  style={{height: '300px', marginBottom: '45px',  marginTop: '15px'}}>
               <div className="card-block">
-              <img style={{height: '300px', width:'420px'}} src={Nmis} alt="" />
+              <img style={{height: '300px', width:'420px', objectFit: 'cover'}} src={Nmis} alt="" />
                
               </div>
 
                
-              <div className="" style={{backgroundColor: '#0A6921', opacity: 1.0,  marginBottom: '105px', width:'420px'}}>
+              <div className="" style={{backgroundColor: 'rgba(72, 129, 52, 1)', opacity: 1.0,  marginBottom: '105px', width:'420px'}}>
               <center>  <p style={{color: 'white',  paddingTop: '5px', fontSize: '14px'}}>UNEMPLOYMENT STATISTICS BY EDUCATIONAL GROUP</p><center>
                 </center></center></div>
 
@@ -175,12 +217,12 @@ export function DataPage() {
           <div className="col-sm-4">
           <div className="card"  style={{height: '300px', marginBottom: '45px',  marginTop: '15px'}}>
               <div className="card-block">
-              <img style={{height: '300px', width:'420px'}} src={Nship} alt="" />
+              <img style={{height: '300px', width:'420px', objectFit: 'cover'}} src={Nship} alt="" />
                 
               </div>
 
                
-              <div className="" style={{backgroundColor: '#0A6921', opacity: 1.0,  marginBottom: '105px', width:'420px'}}>
+              <div className="" style={{backgroundColor: 'rgba(72, 129, 52, 1)', opacity: 1.0,  marginBottom: '105px', width:'420px'}}>
               <center>  <p style={{color: 'white',  paddingTop: '5px', fontSize: '14px'}}>UNEMPLOYMENT STATISTICS BY AGE GROUP</p><center>
                 </center></center></div>
 
@@ -190,12 +232,12 @@ export function DataPage() {
           <div className="col-sm-4" >
           <div className="card"  style={{height: '300px', marginBottom: '45px',  marginTop: '15px'}}>
               <div className="card-block">
-              <img style={{height: '300px', width:'420px'}} src={Vacs} alt="" />
+              <img style={{height: '300px', width:'420px', objectFit: 'cover'}} src={Vacs} alt="" />
                
               </div>
 
                
-              <div className="" style={{backgroundColor: '#0A6921', opacity: 1.0,  marginBottom: '105px', width:'420px'}}>
+              <div className="" style={{backgroundColor: 'rgba(72, 129, 52, 1)', opacity: 1.0,  marginBottom: '105px', width:'420px'}}>
               <center>  <p style={{color: 'white',  paddingTop: '5px', fontSize: '14px'}}>UNEMPLOYMENT STATISTICS BY AGE GROUP</p><center>
                 </center></center></div>
 
@@ -207,12 +249,12 @@ export function DataPage() {
           <div className="col-sm-4" >
           <div className="card"  style={{height: '300px', marginBottom: '45px',  marginTop: '15px'}}>
               <div className="card-block">
-              <img style={{height: '300px', width:'420px'}} src={Chea} alt="" />
+              <img style={{height: '300px', width:'420px', objectFit: 'cover'}} src={Chea} alt="" />
                
               </div>
 
                
-              <div className="" style={{backgroundColor: '#0A6921', opacity: 1.0,  marginBottom: '105px', width:'420px'}}>
+              <div className="" style={{backgroundColor: 'rgba(72, 129, 52, 1)', opacity: 1.0,  marginBottom: '105px', width:'420px'}}>
               <center>  <p style={{color: 'white',  paddingTop: '5px', fontSize: '14px'}}>UNEMPLOYMENT STATISTICS BY AGE GROUP</p><center>
                 </center></center></div>
 
@@ -222,12 +264,12 @@ export function DataPage() {
           <div className="col-sm-4">
           <div className="card"  style={{height: '300px', marginBottom: '45px',  marginTop: '15px'}}>
               <div className="card-block">
-              <img style={{height: '300px', width:'420px'}} src={Im} alt="" />
+              <img style={{height: '300px', width:'420px', objectFit: 'cover'}} src={Im} alt="" />
                 
               </div>
 
                
-              <div className="" style={{backgroundColor: '#0A6921', opacity: 1.0,  marginBottom: '105px', width:'420px'}}>
+              <div className="" style={{backgroundColor: 'rgba(72, 129, 52, 1)', opacity: 1.0,  marginBottom: '105px', width:'420px'}}>
               <center>  <p style={{color: 'white',  paddingTop: '5px', fontSize: '14px'}}>UNEMPLOYMENT STATISTICS BY AGE GROUP</p><center>
                 </center></center></div>
 
@@ -237,12 +279,12 @@ export function DataPage() {
           <div className="col-sm-4" >
           <div className="card"  style={{height: '300px', marginBottom: '45px',  marginTop: '15px'}}>
               <div className="card-block">
-              <img style={{height: '300px', width:'420px'}} src={Nur} alt="" />
+              <img style={{height: '300px', width:'420px', objectFit: 'cover'}} src={Nur} alt="" />
                
               </div>
 
                  
-              <div className="" style={{backgroundColor: '#0A6921', opacity: 1.0,  marginBottom: '105px', width:'420px'}}>
+              <div className="" style={{backgroundColor: 'rgba(72, 129, 52, 1)', opacity: 1.0,  marginBottom: '105px', width:'420px'}}>
               <center>  <p style={{color: 'white',  paddingTop: '5px', fontSize: '14px'}}>UNEMPLOYMENT STATISTICS BY AGE GROUP</p><center>
                 </center></center></div>
             </div>

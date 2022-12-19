@@ -72,11 +72,11 @@ function Home() {
         <li> <Link  to="/Indicators">Indicators</Link></li>
         <li><a href="#services">Sectors</a></li>
         <li><Link  to="/Occupation">Occupation</Link></li>
-        <li><a href="#team">States</a></li>
-        <li><Link  to="/Occupation">Data Insights</Link></li>
+        <li><Link  to="/Country">States</Link></li>
+        <li><Link  to="/Data">Data Insights</Link></li>
         <li className="dropdown"><a href="#"><span>More Tools</span> <i className="bi bi-chevron-down dropdown-indicator" /></a>
           <ul>
-            <li><a href="#">Find Jobs</a></li>
+            <li><Link  to="/job-statistics">Find Jobs</Link></li>
             <li className="dropdown"><a href="#"><span>Online Tools</span> <i className="bi bi-chevron-down dropdown-indicator" /></a>
               <ul>
                 <li><a href="#">Overview</a></li>
@@ -86,7 +86,7 @@ function Home() {
              
               </ul>
             </li>
-            <li><a href="#">Jobs Statistics</a></li>
+            <li><Link  to="/job-statistics">Jobs Statistics</Link></li>
             <li><a href="#">Infographs</a></li>
             <li><a href="#">Contact NLMIS</a></li>
           </ul>
@@ -104,7 +104,7 @@ function Home() {
   <div className="container position-relative">
     <div className="row gy-5" data-aos="fade-in">
       <div className="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
-        <h2>Welcome to <span>Nigeria Labour Market Informatio System</span></h2>
+        <h2>Welcome to <span>Nigeria Labour Market Information System</span></h2>
         <p style={{fontSize: '23PX'}}>We provide facts, studies and statistics</p>
         <div className="d-flex justify-content-center justify-content-lg-start">
           <a href="#about" className="btn-get-started">Search our database</a>

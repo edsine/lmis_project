@@ -16,7 +16,7 @@ import ModalTitle from "react-bootstrap/ModalTitle";
 import Common from '../inc/Common';
 
 
-import Footer from '../inc/Footer';
+
 
 
    
@@ -35,7 +35,8 @@ export function ToolsPage() {
         
            
         <div className="container">
-     
+          <br />
+        <p>Home || <b  style={{color: 'green'}}>Online Tools</b></p>
 
       
              <center>
