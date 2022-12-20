@@ -33,9 +33,9 @@ function Navbarbefore() {
              
               </ul>
             </li>
-            <li><Link to='/Nelex'>Jobs Statistics</Link></li>
-            <li><Link to='/'>Infographs</Link></li>
-            <li><Link to='/'>Contact NLMIS</Link></li>
+            <li><Link to='/job-statistics'>Jobs Statistics</Link></li>
+            <li><Link to='/infographs'>Infographs</Link></li>
+            <li><Link to='/'>Contact LMIS</Link></li>
           </ul>
         </li>
         <li><Link to="/about">About LMIS</Link></li>

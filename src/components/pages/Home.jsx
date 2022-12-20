@@ -126,7 +126,7 @@ function Home() {
       <div className="row gy-4">
         <div className="col-lg-6">
           <h3>Recent Publications</h3>
-         <ApexMixed />
+          <img  src={Im} className="img-fluid rounded-4 mb-4" alt="" />
           <p>Labor is the main asset for the world’s poorest people. This means that the labor market is the primary vehicle through which the proceeds of economic growth are spread to households and individuals. Therefore, understanding the labor market is crucial to achieve Nigeria’s aspiration to lift 100 million people out of poverty by 2030 – an ambitious objective, since even before the COVID-19 crisis around 4 in 10 Nigerians were living below the national poverty line.</p>
        
         </div>
