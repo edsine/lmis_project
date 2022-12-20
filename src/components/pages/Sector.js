@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 //import Bar from './Bar';
 import { Link } from "react-router-dom";
 import {
@@ -11,10 +11,22 @@ import {
 
 import Common from "../inc/Common";
 import nigeriaHigh from "../images/ng.svg";
-
+import list from '../data/list';
 import Footer from "../inc/Footer";
+ 
 
 function Sector() {
+  const [sectorState,setSectorState] = useState()
+
+  const  handleChange = (e)=>{
+    const selected =  e.target.value;
+    const selectedSectorState = list.filter((d)=>d.id == selected)[0];
+    console.log(selectedSectorState);
+    setSectorState(selectedSectorState);
+
+
+  }
+  
   return (
     <>
       <Common />
@@ -31,7 +43,24 @@ function Sector() {
 
               <div>
                 <div class="col text-center ">
-                  <select
+    <select onChange={(e)=>{
+              handleChange(e)
+            }}>
+              {
+                list && list.map((l)=>(
+                  <option key={l.id} value={l.id} className="">
+                    {l.restaurant}
+                    
+                    </option>
+                ))
+              }
+                    
+                  </select>
+                  
+                  
+                  
+                  {/*
+                  <select 
                     class=" form-select-lg mb-3 pe-5"
                     aria-label=".form-select-lg example"
                   >
@@ -66,6 +95,7 @@ function Sector() {
 
                     <option value="21">-- Water and waste treatment</option>
                   </select>
+                  */}
                 </div>
               </div>
             </div>
@@ -254,24 +284,10 @@ function Sector() {
                 class="card-header"
                 style={{ backgroundColor: "#0A6921", color: "#fff" }}
               >
-                Featured
+                {sectorState?.restaurant}
               </div>
-              <div class="card-body">
-                Accommodation & food Included in the accommodation and food
-                sector is the provision of accommodation and the provision of
-                complete meals and drinks fit for immediate consumption. The
-                accommodation category includes provision of short-stay
-                accommodation for visitors and other travellers and of
-                longer-term accommodation for students, workers and similar
-                individuals, either including or excluding the provision of
-                meals or recreational facilities. Excluded is the provision of
-                long-term primary residences, such as apartments typically
-                leased on a monthly or annual basis, as these are classified
-                under real estate. The food and beverage segment of the sector
-                includes traditional restaurants and self-service or take-away
-                restaurants, whether as permanent or temporary stands with or
-                without seating. All meals must be fit for immediate consumption
-                to be included in the sector.
+              <div class="card-body" className="py-font py-5 px-5">
+              {sectorState?.bio}
               </div>
             </div>
           </div>
@@ -297,11 +313,11 @@ function Sector() {
                           <BiBuoy size={70} color="#488134" />
                         </div>
                       </div>
-                      <h5 className="card-title">Total employment yes</h5>
-                      <p className="card-text">
+                      <h5 className="card-title py-font">Total employment yes</h5>
+                      <p className="card-text py-font">
                         618,900 in <strong>2020</strong> in NGN
                       </p>
-                      <p className="card-text">
+                      <p className="card-text py-font">
                         <small className="text-muted">
                           Last updated 3 mins ago
                         </small>
@@ -375,7 +391,7 @@ function Sector() {
                   </div>
                 </div>
                 <div className="text-center p-5">
-                  <img src={nigeriaHigh} />
+                  <img src={sectorState?.image} />
                 </div>
               </div>
               <div class="col-4">
