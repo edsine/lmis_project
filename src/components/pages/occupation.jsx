@@ -13,10 +13,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "../../styles/bootstrap-icons/bootstrap-icons.css";
 
-// import Common from '../inc/Common';
+import Common from '../inc/Common';
 
 
-// import Footer from '../inc/Footer';
 
  function Occupation() {
 
@@ -52,7 +51,7 @@ import "../../styles/bootstrap-icons/bootstrap-icons.css";
   return (
     <>
 
-        {/* <Common /> */}
+        <Common />
         <div className=''>
 
 
@@ -72,73 +71,29 @@ import "../../styles/bootstrap-icons/bootstrap-icons.css";
 
 
 
-
-<header id="header" className="header d-flex align-items-center" style={{marginBottom: '1px',borderBottomColor: 'grey'}}>
-  <div className="container-fluid container-xl d-flex align-items-center justify-content-between" >
-    <a href="index.html" className="logo d-flex align-items-center">
-      {/* Uncomment the line below if you also wish to use an image logo */}
-      {/* <img src="assets/img/logo.png" alt=""> */}
-      <h1>LMIS<span>.</span></h1>
-    </a>
-    <nav id="navbar" className="navbar">
-      <ul>
-        <li><Link  to="/">Home</Link></li>
-        <li> <Link  to="/Indicators">Indicators</Link></li>
-        <li><a href="#services">Sectors</a></li>
-        <li><a href="#portfolio">Occupation</a></li>
-        <li><a href="#team">States</a></li>
-        <li><Link  to="/Data">Data Insights</Link></li>
-        <li className="dropdown"><a href="#"><span>More Tools</span> <i className="bi bi-chevron-down dropdown-indicator" /></a>
-          <ul>
-            <li><a href="#">Find Jobs</a></li>
-            <li className="dropdown"><a href="#"><span>Online Tools</span> <i className="bi bi-chevron-down dropdown-indicator" /></a>
-              <ul>
-                <li><a href="#">Overview</a></li>
-                <li><a href="#">National Plan</a></li>
-                <li><a href="#">Budget</a></li>
-                <li><a href="#">Summary</a></li>
-             
-              </ul>
-            </li>
-            <li><a href="#">Jobs Statistics</a></li>
-            <li><a href="#">Infographs</a></li>
-            <li><a href="#">Contact NLMIS</a></li>
-          </ul>
-        </li>
-        <li><a href="#contact">About LMIS</a></li>
-      </ul>
-    </nav>{/* .navbar */}
-    <i className="mobile-nav-toggle mobile-nav-show bi bi-list" />
-    <i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" />
-  </div>
-
-</header>{/* End Header */}
-{/* End Header */}
-{/* ======= Hero Section ======= */}
-
-
-
   <br />
-        <p style={{marginLeft: '20px', }}>Home || <b  style={{color: 'green'}}>Occupation</b></p>
+       
 
         <div class="card card-margin">
            
-           <div class="card-body" style={{backgroundColor: 'rgba(72, 129, 52, 1)', }}>
+          
             <div className='container'>
-          <center> <h1 style={{color: 'white', fontStyle: 'bold'}}> <BiBriefcase size={58} color="white" className='pb-2'/> Browse by Occupations</h1></center> 
+            <p style={{marginLeft: '20px', }}>Home || <b  style={{color: 'green'}}>Occupation</b></p>
+            <div class="card-body" style={{backgroundColor: 'white', }}>
+          <center> <h1 style={{color: 'black', fontStyle: 'bold'}}> <BiBriefcase size={58} color="black" className='pb-2'/> Browse by Occupations</h1></center> 
           <hr />
                 <div className='row'>
                   
                     <div className='col-6'>
                      
 
-                    <p style={{color: 'white'}}> Accommodation & food
+                    <p style={{color: 'black'}}> Accommodation & food
         provision of short-stay accommodation for visitors and other travellers and of longer-term accommodation for students, workers and similar individuals, either including or excluding the provision of meals or recreational facilities. Excluded is the provision of long-term primary residences, typically leased on a monthly or annual basis, as these are classified under real estate.</p>
                     </div>
              
                 <div className='col-6'>
 
-           <p style={{color: 'white'}}>The food and beverage segment of the sector includes traditional restaurants and self-service or take-away restaurants, whether as permanent or temporary stands with or without seating. All meals must be fit for immediate consumption to be included in the sector.such as apartments </p> 
+           <p style={{color: 'black'}}>The food and beverage segment of the sector includes traditional restaurants and self-service or take-away restaurants, whether as permanent or temporary stands with or without seating. All meals must be fit for immediate consumption to be included in the sector.such as apartments </p> 
        </div>
        </div>
        </div>

@@ -5,17 +5,17 @@ import { Pie } from 'react-chartjs-2';
 import { BiBuildings, BiBriefcase } from 'react-icons/bi';
 import { FiUsers } from 'react-icons/fi';
 
-import Navbar from '../inc/Navbar';
-import Navbarbefore from '../inc/Navbarbefore'
+
 import ApexMixed from '../apexcharts/ApexMixed'
 import Trends from './trends';
+import Common from '../inc/Common';
 
 function Viewdetails() {
 
     return(
 
  <div>
-     <Navbarbefore />
+     <Common />
  <div className="container">
    <header className="blog-header py-3">
      <div className="row flex-nowrap justify-content-between align-items-center mb-8">
