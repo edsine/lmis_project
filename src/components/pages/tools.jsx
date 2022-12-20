@@ -36,7 +36,7 @@ export function ToolsPage() {
            
         <div className="container">
           <br />
-        <p>Home || <b  style={{color: 'green'}}>Online Tools</b></p>
+        <p>Home || More tools || <b  style={{color: 'green'}}>Online Tools</b></p>
 
       
              <center>

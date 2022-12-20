@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Bar } from 'react-chartjs-2';
 import { Link } from 'react-router-dom';
 import { Pie } from 'react-chartjs-2';
-import Navbar from '../inc/Navbar';
-import Navbarbefore from '../inc/Navbarbefore'
+
 import ApexMixed from '../apexcharts/ApexMixed'
+import Common from '../inc/Common';
 
 
 function Viewtools() {
@@ -57,7 +57,7 @@ function Viewtools() {
 
 
     <div>
-      <Navbarbefore />
+      <Common />
       <nav className="navbar navbar-default no-margin">
         {/* Brand and toggle get grouped for better mobile display */}
         <div className="navbar-header fixed-brand">
@@ -90,15 +90,13 @@ function Viewtools() {
                   <a href="#" style={{ color: '#488134' }} className="nav-pills nav-stacked "><span className="fa-stack fa-lg info "><i className="fa fa-info-circle fa-stack-1x" /></span>National plan</a>
                 </li>
                 <li >
-                  <a href="#" style={{ color: '#488134' }} className="nav-pills nav-stacked "><span className="fa-stack fa-lg pull-left "><i className="fa fa-bank fa-stack-1x " /></span>Budget</a>
-                </li>
-                <li >
                   <Link style={{ color: '#488134' }} className="nav-pills nav-stacked " to="/summary"><span className="fa-stack fa-lg pull-left "><i className="fa fa-gear fa-stack-1x " /></span>Summary</Link>
                 </li>
               </ul>
             </li>
 
           </ul>
+          
         </div>
         {/* /#sidebar-wrapper */}
         {/* Page Content */}
@@ -218,6 +216,7 @@ function Viewtools() {
           </div>
         </div>
       </div>
+     
 
     </div>
   );

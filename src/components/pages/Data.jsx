@@ -100,6 +100,8 @@ export function DataPage() {
 <Common />
            
         <div className="container" style={{ }}>
+          <br></br>
+        <p>Home || <b  style={{color: 'green'}}>Data Insights</b></p>
         <div className="row">
 
        

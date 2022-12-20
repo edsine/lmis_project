@@ -5,10 +5,10 @@ import { Pie } from 'react-chartjs-2';
 import { HorizontalBar } from 'react-chartjs-2';
 import { Chart } from "react-google-charts";
 
-import Navbar from '../inc/Navbar';
-import Navbarbefore from '../inc/Navbarbefore'
+
 import ApexMixed from '../apexcharts/ApexMixed'
 import Apexscatter from '../apexcharts/Apexscatter';
+import Common from '../inc/Common';
 
 
 
@@ -41,7 +41,7 @@ function Trends() {
     return(
 
  <div>
-     <Navbarbefore />
+     <Common />
      <hr />
  <div className="container">
    <header className="blog-header">
