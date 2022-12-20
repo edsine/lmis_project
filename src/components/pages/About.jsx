@@ -146,7 +146,7 @@ function Aboutus() {
                         <div className="col-md-12 ">
                             <div className='card shadow'>
                                 <div className="card-body card-body1">
-                                   
+
                                     <div className="col-md-11 float-end">
                                         <h3 className="activities mt-5">Labour Activities</h3>
                                         <Line data={data} options={{ responsive: true }} />
@@ -165,8 +165,8 @@ function Aboutus() {
                         <div className="my-5 col-md-6">
                             <div className='card shadow'>
                                 <div className="card-body card-body1">
-                     
-                                    <ApexCand/>
+
+                                    <ApexCand />
                                 </div>
                             </div>
                         </div>
@@ -174,8 +174,8 @@ function Aboutus() {
                             <div className='card shadow'>
                                 <div className="card-body card-body1">
                                     {/* <h3 className="activities mt-5">Activities</h3> */}
-                                   
-                  <ApexCandle/>
+
+                                    <ApexCandle />
                                 </div>
                             </div>
                         </div>
@@ -189,7 +189,7 @@ function Aboutus() {
                             <div className='card shadow'>
                                 <div className="card-body card-body1">
                                     <h3 className="activities mt-5">Activities</h3>
-                                    <ApexRadar/>
+                                    <ApexRadar />
                                 </div>
                             </div>
                         </div>
@@ -206,17 +206,17 @@ function Aboutus() {
                             <div className='card shadow'>
                                 <div className="card-body card-body1">
                                     <h3 className="activities mt-5">Activities</h3>
-                                    <ApexBob/>
+                                    <ApexBob />
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
                         <div class="mb-5">
                             {/* <h1>Welcome</h1> */}
                             <p className='voters-chart-text'>
                                 Since Nigeria's 1999 transition from military to civilian rule, LMIS has worked closely with Nigerian groups to support the development of the country's democratic institutions. Since 2011, LMIS has supported citizen election observer groups to conduct parallel vote tabulations (PVTs) for two presidential and 19 gubernatorial elections. LMIS’s PVT partners have also deployed pre-election observation reporting projects, marking the first time citizen observation groups have collected systematic data in the pre-election phase.
                             </p>
                         </div>
-                        
+
                     </div>
                 </div>
             </section >
