@@ -163,7 +163,7 @@ export function DataPage() {
           <div className="col-sm-4" >
           <div className="card"  style={{height: '300px', marginBottom: '45px',  marginTop: '15px'}}>
               <div className="card-block">
-              <img style={{height: '300px', width:'420px', objectFit: 'cover'}} src={Nmis} alt="" />
+              <img style={{height: '300px', width:'420px', objectFit: 'cover'}} type="button" onClick={showModalx}  src={Nmis} alt="" />
                
               </div>
 
