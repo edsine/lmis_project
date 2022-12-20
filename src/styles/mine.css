@@ -977,7 +977,8 @@ section {
 }
 
 .services .service-item .icon i {
-  color: var(--color-default);
+  /* color: var(--color-default); */
+  color: rgb(39, 76, 26);
   font-size: 56px;
   transition: ease-in-out 0.3s;
   z-index: 2;
@@ -1022,7 +1023,8 @@ section {
 }
 
 .services .service-item:hover .icon:before {
-  background: #00b6a1;
+  background: rgb(39, 76, 26, 0.5);
+  ;
 }
 
 .services .service-item:hover h3 {
