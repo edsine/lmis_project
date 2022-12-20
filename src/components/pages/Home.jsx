@@ -21,7 +21,8 @@ import Vacs from '../images/VACS.jpg'
 import Chea from '../images/unsplash_h5xEHzfepNk.png'
 import Im from '../images/rice.jpg'
 import Nur from '../images/stats-img.svg'
-
+import Common from '../inc/Common';
+import ApexMixed from '../apexcharts/ApexMixed'
 
 
 // import "../../styles/aos.css";
@@ -57,50 +58,10 @@ function Home() {
 
 
 
+<Common />
 
 
-<header id="header" className="header d-flex align-items-center" >
-  <div className="container-fluid container-xl d-flex align-items-center justify-content-between" >
-    <a href="index.html" className="logo d-flex align-items-center">
-      {/* Uncomment the line below if you also wish to use an image logo */}
-      {/* <img src="assets/img/logo.png" alt=""> */}
-      <h1>LMIS<span>.</span></h1>
-    </a>
-    <nav id="navbar" className="navbar">
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li> <Link  to="/Indicators">Indicators</Link></li>
-        <li><a href="#services">Sectors</a></li>
-        <li><Link  to="/Occupation">Occupation</Link></li>
-        <li><Link  to="/Country">States</Link></li>
-        <li><Link  to="/Data">Data Insights</Link></li>
-        <li className="dropdown"><a href="#"><span>More Tools</span> <i className="bi bi-chevron-down dropdown-indicator" /></a>
-          <ul>
-            <li><Link  to="/job-statistics">Find Jobs</Link></li>
-            <li className="dropdown"><a href="#"><span>Online Tools</span> <i className="bi bi-chevron-down dropdown-indicator" /></a>
-              <ul>
-                <li><a href="#">Overview</a></li>
-                <li><a href="#">National Plan</a></li>
-                <li><a href="#">Budget</a></li>
-                <li><a href="#">Summary</a></li>
-             
-              </ul>
-            </li>
-            <li><Link  to="/job-statistics">Jobs Statistics</Link></li>
-            <li><a href="#">Infographs</a></li>
-            <li><a href="#">Contact NLMIS</a></li>
-          </ul>
-        </li>
-        <li><a href="#contact">About LMIS</a></li>
-      </ul>
-    </nav>{/* .navbar */}
-    <i className="mobile-nav-toggle mobile-nav-show bi bi-list" />
-    <i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" />
-  </div>
-</header>{/* End Header */}
-{/* End Header */}
-{/* ======= Hero Section ======= */}
-<section id="hero" className="hero" style={{backgroundImage: `url(${Chea})`, backgroundColor:'green', backgroundSize: 'cover', display: 'block', opacity: '0.9'}}>
+<section id="hero" className="hero" style={{backgroundImage: `url(${Chea})`, backgroundColor:'rgba(72, 129, 52, 0.85)', backgroundBlendMode: 'multiply', backgroundSize: 'cover', display: 'block'}}>
   <div className="container position-relative">
     <div className="row gy-5" data-aos="fade-in">
       <div className="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
@@ -166,23 +127,19 @@ function Home() {
         <div className="col-lg-6">
           <h3>Recent Publications</h3>
           <img  src={Im} className="img-fluid rounded-4 mb-4" alt="" />
-          <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
-          <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.</p>
+          <p>Labor is the main asset for the world’s poorest people. This means that the labor market is the primary vehicle through which the proceeds of economic growth are spread to households and individuals. Therefore, understanding the labor market is crucial to achieve Nigeria’s aspiration to lift 100 million people out of poverty by 2030 – an ambitious objective, since even before the COVID-19 crisis around 4 in 10 Nigerians were living below the national poverty line.</p>
+       
         </div>
         <div className="col-lg-6">
           <div className="content ps-0 ps-lg-5">
-            <p className="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
+            
             <ul>
               <li><i className="bi bi-check-circle-fill" /> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
               <li><i className="bi bi-check-circle-fill" /> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
               <li><i className="bi bi-check-circle-fill" /> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
             </ul>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+            This paper provides a coherent picture from labor market data and imposes some analytic interpretations on this picture. Thus, a brief overview of the Nigerian economy is carried out, with emphasis on the characteristics of the productive structure, the export activities and the trends of the Nigerian labor market since 1970 can be understood as the outcome of four circumstances: a disequilibrium urban wage rate, the increase of the real exchange rate due to the oil boom, a massive increase in public sector employment and a relative contraction in the rural labor force. 
             </p>
             <div className="position-relative mt-4">
               <img src={Nship} className="img-fluid rounded-4" alt="" />
@@ -218,7 +175,7 @@ function Home() {
     </div>
   </section>{/* End Stats Counter Section */}
   {/* ======= Call To Action Section ======= */}
-  <section id="call-to-action" className="call-to-action" style={{backgroundImage: `url(${Act})`,backgroundSize: 'cover', marginLeft: '10%', marginRight: '10%', padding: '10px 40px', borderRadius: '15px', overflow:'hidden'}}>
+  <section id="call-to-action" className="call-to-action" style={{backgroundImage: `url(${Act})`,backgroundColor:'rgba(72, 129, 52, 0.85)', backgroundBlendMode: 'multiply', backgroundSize: 'cover', marginLeft: '10%', marginRight: '10%', padding: '10px 40px', borderRadius: '15px', overflow:'hidden'}}>
 
     <div className="container text-center" data-aos="zoom-out">
       <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox command-btn" />

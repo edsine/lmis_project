@@ -8,37 +8,37 @@ function Navbarbefore() {
     return (
         <header id="header" className="header d-flex align-items-center" >
   <div className="container-fluid container-xl d-flex align-items-center justify-content-between" >
-    <a href="index.html" className="logo d-flex align-items-center">
+    <Link href="index.html" className="logo d-flex align-items-center">
       {/* Uncomment the line below if you also wish to use an image logo */}
       {/* <img src="assets/img/logo.png" alt=""> */}
       <h1>LMIS<span>.</span></h1>
-    </a>
+    </Link>
     <nav id="navbar" className="navbar">
       <ul>
-        <li><a href="#hero">Home</a></li>
+        <li><Link  to="/">Home</Link></li>
         <li> <Link  to="/Indicators">Indicators</Link></li>
-        <li><a href="#services">Sectors</a></li>
+        <li><Link to="/sector">Sectors</Link></li>
         <li><Link  to="/Occupation">Occupation</Link></li>
-        <li><a href="#team">States</a></li>
+        <li><Link to="/country">States</Link></li>
         <li><Link  to="/Data">Data Insights</Link></li>
-        <li className="dropdown"><a href="#"><span>More Tools</span> <i className="bi bi-chevron-down dropdown-indicator" /></a>
+        <li className="dropdown"><Link href="#"><span>More Tools</span> <i className="bi bi-chevron-down dropdown-indicator" /></Link>
           <ul>
-            <li><a href="#">Find Jobs</a></li>
-            <li className="dropdown"><a href="#"><span>Online Tools</span> <i className="bi bi-chevron-down dropdown-indicator" /></a>
+            <li><a href="https://www.nelexnigeria.com">Find Jobs</a></li>
+            <li className="dropdown"><Link to="/tools"><span>Online Tools</span> <i className="bi bi-chevron-down dropdown-indicator" /></Link>
               <ul>
-                <li><a href="#">Overview</a></li>
-                <li><a href="#">National Plan</a></li>
-                <li><a href="#">Budget</a></li>
-                <li><a href="#">Summary</a></li>
+                <li><Link to='/'>Overview</Link></li>
+                <li><Link to='/'>National Plan</Link></li>
+                <li><Link to='/'>Budget</Link></li>
+                <li><Link to='/'>Summary</Link></li>
              
               </ul>
             </li>
-            <li><a href="#">Jobs Statistics</a></li>
-            <li><a href="#">Infographs</a></li>
-            <li><a href="#">Contact NLMIS</a></li>
+            <li><Link to='/job-statistics'>Jobs Statistics</Link></li>
+            <li><Link to='/infographs'>Infographs</Link></li>
+            <li><Link to='/'>Contact LMIS</Link></li>
           </ul>
         </li>
-        <li><a href="#contact">About LMIS</a></li>
+        <li><Link to="/about">About LMIS</Link></li>
       </ul>
     </nav>{/* .navbar */}
     <i className="mobile-nav-toggle mobile-nav-show bi bi-list" />
