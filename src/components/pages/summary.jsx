@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom';
 import { Bar } from 'react-chartjs-2';
 import { Pie } from 'react-chartjs-2';
 import Seetools from './seetools';
-import Navbar from '../inc/Navbar';
-import Navbarbefore from '../inc/Navbarbefore'
 import ApexMult from '../apexcharts/ApexMult'
+import Common from '../inc/Common';
 
 
 function Summary() {
@@ -56,7 +55,7 @@ function Summary() {
 
       
                 <div>
-                    <Navbarbefore/>
+                    <Common/>
                   <nav className="navbar navbar-default no-margin">
                     {/* Brand and toggle get grouped for better mobile display */}
                     <div className="navbar-header fixed-brand">

@@ -26,10 +26,10 @@ function Navbarbefore() {
             <li><a href="https://www.nelexnigeria.com">Find Jobs</a></li>
             <li className="dropdown"><Link to="/tools"><span>Online Tools</span> <i className="bi bi-chevron-down dropdown-indicator" /></Link>
               <ul>
-                <li><Link to='/'>Overview</Link></li>
-                <li><Link to='/'>National Plan</Link></li>
+                <li><Link to='/viewtools'>Overview</Link></li>
+                {/* <li><Link to='/'>National Plan</Link></li> */}
                 <li><Link to='/'>Budget</Link></li>
-                <li><Link to='/'>Summary</Link></li>
+                <li><Link to='/summary'>Summary</Link></li>
              
               </ul>
             </li>
