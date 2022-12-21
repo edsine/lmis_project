@@ -29,6 +29,7 @@ import ApexCand from '../apexcharts/ApexCand'
 // import ApexBob from '../apexcharts/ApexBob'
 import { BiBuildings, BiBriefcase } from 'react-icons/bi';
 import { FiUsers } from 'react-icons/fi';
+import ApexPie from '../apexcharts/ApexPie';
 
 // import "../../styles/aos.css";
 
@@ -134,8 +135,8 @@ function Home() {
             <div className="my-1 col-md-6">
               <div className='shadow'>
                 <div className="card-body card-body1">
-                  {/* <h3 className="activities mt-5">Activities</h3> */}
-                  <ApexCandle />
+                  <h5 className="activities">Nigeria Employment Rate</h5>
+                  <ApexPie />
                 </div>
               </div>
             </div>
@@ -143,7 +144,7 @@ function Home() {
         </div>
       </section>
 
-      <div className="container">
+      {/* <div className="container">
         <div className="row">
           <div className="col-xl-3 col-lg-4 col-sm-6 mx-auto rt-mb-30">
             <div className="card jobcardStyle1 counterbox tw-bg-white hover:tw-shadow-[0px_12px_48px_rgb(2,131,79,0.9)]">
@@ -227,7 +228,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <main id="main">
         {/* ======= Stats Counter Section ======= */}
