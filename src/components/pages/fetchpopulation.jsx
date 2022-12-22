@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const Population = () => {
    const [posts, setPosts] = useState([]);
    useEffect(() => {
-      fetch('http://localhost:3001/api/v2/population?_limit=10')
+      fetch('http://localhost:3001/api/v2/population')
          .then((response) => response.json())
          .then((data) => {
             console.log(data);

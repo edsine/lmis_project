@@ -33,7 +33,7 @@ class ApexPie extends React.Component {
               }
             }
           },
-          labels: ['Apples', 'Oranges', 'Bananas', 'Berries'],
+          labels: ['Men', 'Women', 'Youths', 'Children'],
         },
       
       
