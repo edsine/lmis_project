@@ -12,8 +12,8 @@ class ApexCand extends React.Component {
               name: 'Actual',
               data: [
                 {
-                  x: '2011',
-                  y: 1292,
+                  x: '15-24years',
+                  y: 5999,
                   goals: [
                     {
                       name: 'Expected',
@@ -23,21 +23,21 @@ class ApexCand extends React.Component {
                     }
                   ]
                 },
+                // {
+                //   x: '2012',
+                //   y: 4432,
+                //   goals: [
+                //     {
+                //       name: 'Expected',
+                //       value: 5400,
+                //       strokeHeight: 5,
+                //       strokeColor: '#775DD0'
+                //     }
+                //   ]
+                // },
                 {
-                  x: '2012',
-                  y: 4432,
-                  goals: [
-                    {
-                      name: 'Expected',
-                      value: 5400,
-                      strokeHeight: 5,
-                      strokeColor: '#775DD0'
-                    }
-                  ]
-                },
-                {
-                  x: '2013',
-                  y: 5423,
+                  x: '25-34years',
+                  y: 8333,
                   goals: [
                     {
                       name: 'Expected',
@@ -47,46 +47,20 @@ class ApexCand extends React.Component {
                     }
                   ]
                 },
+                // {
+                //   x: '2014',
+                //   y: 6653,
+                //   goals: [
+                //     {
+                //       name: 'Expected',
+                //       value: 6500,
+                //       strokeHeight: 5,
+                //       strokeColor: '#775DD0'
+                //     }
+                //   ]
+                // },
                 {
-                  x: '2014',
-                  y: 6653,
-                  goals: [
-                    {
-                      name: 'Expected',
-                      value: 6500,
-                      strokeHeight: 5,
-                      strokeColor: '#775DD0'
-                    }
-                  ]
-                },
-                {
-                  x: '2015',
-                  y: 8133,
-                  goals: [
-                    {
-                      name: 'Expected',
-                      value: 6600,
-                      strokeHeight: 13,
-                      strokeWidth: 0,
-                      strokeLineCap: 'round',
-                      strokeColor: '#775DD0'
-                    }
-                  ]
-                },
-                {
-                  x: '2016',
-                  y: 7132,
-                  goals: [
-                    {
-                      name: 'Expected',
-                      value: 7500,
-                      strokeHeight: 5,
-                      strokeColor: '#775DD0'
-                    }
-                  ]
-                },
-                {
-                  x: '2017',
+                  x: '35-44years',
                   y: 7332,
                   goals: [
                     {
@@ -98,8 +72,35 @@ class ApexCand extends React.Component {
                   ]
                 },
                 {
-                  x: '2018',
-                  y: 6553,
+                  x: '45-54years ',
+                  y: 5423 ,
+                  goals: [
+                    {
+                      name: 'Expected',
+                      value: 6600,
+                      strokeHeight: 13,
+                      strokeWidth: 0,
+                      strokeLineCap: 'round',
+                      strokeColor: '#775DD0'
+                    }
+                  ]
+                },
+                // {
+                //   x: '2016',
+                //   y: 7132,
+                //   goals: [
+                //     {
+                //       name: 'Expected',
+                //       value: 7500,
+                //       strokeHeight: 5,
+                //       strokeColor: '#775DD0'
+                //     }
+                //   ]
+                // },
+              
+                {
+                  x: '55-64years',
+                  y: 2592,
                   goals: [
                     {
                       name: 'Expected',
