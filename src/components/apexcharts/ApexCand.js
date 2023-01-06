@@ -2,15 +2,19 @@ import React, { ReactDOM } from "react";
 import ReactApexChart from "react-apexcharts";
 
 class ApexCand extends React.Component {
-    constructor(props) {
-        super(props);
+  constructor(props) {
+    super(props);
 
-        this.state = {
-        
-          series: [
+    this.state = {
+
+      series: [
+        {
+          name: 'Actual',
+          data: [
             {
-              name: 'Actual',
-              data: [
+              x: '2011',
+              y: 1292,
+              goals: [
                 {
                   x: '15-24years',
                   y: 5999,
@@ -113,50 +117,52 @@ class ApexCand extends React.Component {
                 }
               ]
             }
-          ],
-          options: {
-            chart: {
-              height: 350,
-              type: 'bar'
-            },
-            plotOptions: {
-              bar: {
-                columnWidth: '60%'
-              }
-            },
-            colors: ['#00E396'],
-            dataLabels: {
-              enabled: false
-            },
-            legend: {
-              show: true,
-              showForSingleSeries: true,
-              customLegendItems: ['Actual', 'Expected'],
-              markers: {
-                fillColors: ['#00E396', '#775DD0']
-              }
-            }
-          },
-        
-        
-        };
-      }
+          ]
+        }
+      ],
+      options: {
+        chart: {
+          height: 350,
+          type: 'bar'
+        },
+        plotOptions: {
+          bar: {
+            columnWidth: '60%'
+          }
+        },
+        colors: ['#00E396'],
+        dataLabels: {
+          enabled: false
+        },
+        legend: {
+          show: true,
+          showForSingleSeries: true,
+          customLegendItems: ['Actual', 'Expected'],
+          markers: {
+            fillColors: ['#00E396', '#775DD0']
+          }
+        }
+      },
 
-    
 
-      render() {
-        return (
-          
-
-    <div id="chart">
-<ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={350} />
-</div>
-  
-
-        );
-      }
-    }
+    };
+  }
 
 
 
-  export default ApexCand;
+  render() {
+    return (
+
+
+      <div id="chart">
+        <ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={350} />
+      </div>
+
+
+    );
+  }
+}
+
+
+
+export default ApexCand;
